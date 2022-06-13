@@ -1,0 +1,152 @@
+.container{
+    font-family: ubuntu;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .row{
+        .col-md-4{
+            .content{
+                background-color: #ffffff;
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px rgba($color: #000000, $alpha: 0.1);
+                h2{
+                    color: #ff4757;
+                    font-variant: small-caps;
+                    text-align: center;
+                    font-weight: bold;
+                    padding-top: 10px;
+                }
+                ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding-bottom: 15px;
+                }
+            }
+            #return{
+                background-color: #ff4757;
+                a{
+                    display: block;
+                    color: #ffffff;
+                    font-weight: bold;
+                    text-align: center;
+                    cursor: pointer;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+            #info{
+                margin: auto;
+                width: 100%;
+                padding-bottom: 50px;
+                padding-top: 50px;
+                img{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 150px;
+                }
+                h1{
+                    color: #ff4757;
+                    font-variant: small-caps;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 2em;
+                }
+                a{
+                    display: block;
+                    color: #ff4757;
+                    margin-top: 50px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                #types{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 30px;
+                    .type{
+                        width: 75px;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 10px;
+                        border-radius: 20px;
+                        box-shadow: 0px 0px 5px rgba($color: #000000, $alpha: 0.3);
+                        p{
+                            margin-block-end: 0;
+                            color: #ffffff;
+                            font-weight: bold;
+                            font-variant: small-caps;
+                        }
+                    }
+                    .bug{
+                        background-color: #c6d16e;
+                    }
+                    .dark{
+                        background-color: #a29288;
+                    }
+                    .dragon{
+                        background-color: #a27dfa;
+                    }
+                    .electric{
+                        background-color: #fae078;
+                    }
+                    .fairy{
+                        background-color: #f4bdc9;
+                    }
+                    .fighting{
+                        background-color: #d67873;
+                    }
+                    .fire{
+                        background-color: #f5ac78;
+                    }
+                    .flying{
+                        background-color: #c6b7f5;
+                    }
+                    .ghost{
+                        background-color: #a292bc;
+                    }
+                    .grass{
+                        background-color: #a7db8d;
+                    }
+                    .ground{
+                        background-color: #ebd69d;
+                    }
+                    .ice{
+                        background-color: #bce6e6;
+                    }
+                    .normal{
+                        background-color: #c6c6a7;
+                    }
+                    .poison{
+                        background-color: #c183c1;
+                    }
+                    .psychic{
+                        background-color: #fa92b2;
+                    }
+                    .rock{
+                        background-color: #d1c17d;
+                    }
+                    .steel{
+                        background-color: #d1d1e0;
+                    }
+                    .water{
+                        background-color: #9db7f5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        .row{
+            .col-md-4{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
