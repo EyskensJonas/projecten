@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "movie-app-b17be": {
+      "hosting": {
+        "moviesapp": [
+          "movie-app-b17be"
+        ]
+      }
+    },
+    "movieapp-ee7b9": {
+      "hosting": {
+        "moviesapp": [
+          "movieapp-ee7b9"
+        ]
+      }
+    }
+  }
+}

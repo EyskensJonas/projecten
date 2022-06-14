@@ -1,0 +1,26 @@
+<div id="form">
+    <input type="text" name="search" id="search" placeholder="keyword" autocomplete="off" #search>
+    <button type="button" (click)="showMovies(search.value)">search</button>
+</div>
+
+<section id="list">
+    <div class="container">
+        <div class="row">
+            <div class="col-6" id="left">
+                <ul class="list-group">
+                    <li *ngFor="let movie of movies" class="list-group-item list-group-item-action" (click)="getDetail(movie)">
+                        <img [src]="movie.poster" alt="">
+                        <div id="info">
+                            <p class="title">{{movie.title}}</p>
+                            <p class="year">{{movie.year}}</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6" id="right" *ngIf="show">
+                <app-movie [movie]="movie" [plot]="plot"></app-movie>
+            </div>
+        </div>
+    </div>
+</section>
+    
